@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Programs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        div {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            div {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Programs</h1>
+
+    <!-- Program 1: City Name -->
+    <div>
+        <h3>Enter City Name:</h3>
+        <input type="text" id="cityName" placeholder="Enter city name">
+        <button onclick="checkCity()">Submit</button>
+        <p id="cityOutput"></p>
+    </div>
+
+    <!-- Program 2: Gender -->
+    <div>
+        <h3>Enter Gender:</h3>
+        <input type="text" id="gender" placeholder="Enter gender">
+        <button onclick="checkGender()">Submit</button>
+        <p id="genderOutput"></p>
+    </div>
+
+    <!-- Program 3: Traffic Signal -->
+    <div>
+        <h3>Enter Traffic Signal Color:</h3>
+        <input type="text" id="signalColor" placeholder="Enter signal color">
+        <button onclick="checkSignal()">Submit</button>
+        <p id="signalOutput"></p>
+    </div>
+
+    <!-- Program 4: Fuel Check -->
+    <div>
+        <h3>Enter Remaining Fuel in Liters:</h3>
+        <input type="number" id="fuel" placeholder="Enter remaining fuel">
+        <button onclick="checkFuel()">Submit</button>
+        <p id="fuelOutput"></p>
+    </div>
+
+    <!-- Program 5: Script Outputs -->
+    <div>
+        <h3>Script Outputs:</h3>
+        <button onclick="runScript()">Run Script</button>
+        <p id="scriptOutput"></p>
+    </div>
+
+    <!-- Program 6: Marks Calculation -->
+    <div>
+        <h3>Marks Calculation:</h3>
+        <input type="number" id="marks1" placeholder="Marks in Subject 1">
+        <input type="number" id="marks2" placeholder="Marks in Subject 2">
+        <input type="number" id="marks3" placeholder="Marks in Subject 3">
+        <input type="number" id="totalMarks" placeholder="Total Marks">
+        <button onclick="calculateGrade()">Calculate Grade</button>
+        <p id="gradeOutput"></p>
+    </div>
+
+    <!-- Program 7: Guess Game -->
+    <div>
+        <h3>Guess the Secret Number (1-10):</h3>
+        <input type="number" id="guess" placeholder="Enter your guess">
+        <button onclick="guessGame()">Guess</button>
+        <p id="guessOutput"></p>
+    </div>
+
+    <!-- Program 8: Divisibility Check -->
+    <div>
+        <h3>Check Divisibility by 3:</h3>
+        <input type="number" id="divNumber" placeholder="Enter a number">
+        <button onclick="checkDivisibility()">Check</button>
+        <p id="divOutput"></p>
+    </div>
+
+    <!-- Program 9: Even or Odd Check -->
+    <div>
+        <h3>Check Even or Odd:</h3>
+        <input type="number" id="evenOddNumber" placeholder="Enter a number">
+        <button onclick="checkEvenOdd()">Check</button>
+        <p id="evenOddOutput"></p>
+    </div>
+
+    <!-- Program 10: Temperature Check -->
+    <div>
+        <h3>Enter Temperature:</h3>
+        <input type="number" id="temperature" placeholder="Enter temperature">
+        <button onclick="checkTemperature()">Check</button>
+        <p id="tempOutput"></p>
+    </div>
+
+    <!-- Program 11: Simple Calculator -->
+    <div>
+        <h3>Simple Calculator:</h3>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <input type="text" id="operation" placeholder="Enter operation (+, -, *, /, %)">
+        <button onclick="calculate()">Calculate</button>
+        <p id="calcOutput"></p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
